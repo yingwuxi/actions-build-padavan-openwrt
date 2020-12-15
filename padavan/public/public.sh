@@ -55,9 +55,9 @@ sed -i "/CONFIG_FIRMWARE_INCLUDE_WYYBIN/d" >> .config    # 删除配置项 网�
 ######################################################################
 
 # 科学
-echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=y" >> .config  # SS plus+
+echo "CONFIG_FIRMWARE_INCLUDE_SHADOWSOCKS=n" >> .config  # SS plus+
 echo "CONFIG_FIRMWARE_INCLUDE_SSSERVER=n" >> .config     # SS server
-echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=y" >> .config # simple-obfs混淆插件
+echo "CONFIG_FIRMWARE_INCLUDE_SSOBFS=n" >> .config # simple-obfs混淆插件
 
 #  代理
 echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config       # SOCKS proxy
@@ -66,17 +66,17 @@ echo "CONFIG_FIRMWARE_INCLUDE_SRELAY=n" >> .config       # srelay
 echo "CONFIG_FIRMWARE_INCLUDE_IPT2SOCKS=n" >> .config    # IPT2
 
 # 广告
-echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=y" >> .config       # adbyby plus+
+echo "CONFIG_FIRMWARE_INCLUDE_ADBYBY=n" >> .config       # adbyby plus+
 echo "CONFIG_FIRMWARE_INCLUDE_ADGUARDHOME=n" >> .config  # adgHome
 echo "CONFIG_FIRMWARE_INCLUDE_KOOLPROXY=n" >> .config    # KP广告过滤
 
 # DNS 有关
 echo "CONFIG_FIRMWARE_INCLUDE_DNSFORWARDER=n" >> .config # DNS-FORWARDER
-echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=y" >> .config     # smartdns
-echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=y" >> .config  # smartdns二进制文件
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNS=n" >> .config     # smartdns
+echo "CONFIG_FIRMWARE_INCLUDE_SMARTDNSBIN=n" >> .config  # smartdns二进制文件
 
 #网易云解锁
-echo "CONFIG_FIRMWARE_INCLUDE_WYY=y" >> .config
+echo "CONFIG_FIRMWARE_INCLUDE_WYY=n" >> .config
 #网易云解锁GO版本执行文件（4M多）注意固件超大小
 echo "CONFIG_FIRMWARE_INCLUDE_WYYBIN=n" >> .config
 
